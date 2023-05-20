@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.main-hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+.logo {
+    color: #fff;
+    cursor: pointer;
+}
+.logo:hover {
+    color:#803dff;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+    z-index: 5;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+    z-index: 7;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+nav ul li a:hover {
+    color: #803dff;
+}
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+}
+.main-text h1 {
+    font-size: 140px;
+    color: #3c3c3c;
+    font-weight: 800;
+    line-height: 170px;
+}
+span {
+    color: white;
+    letter-spacing: 2px;
+}
+.main-text p {
+    color: #737373;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 40px 0px;
+}
+button {
+    width: 160px;
+    background-color: #803dff;
+    padding: 12px 10px;
+    border: none;
+    color: white;
+    font-style: 18px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+button .CV {
+    background-color: white;
+    padding: 12px 10px;
+    border: none;
+    color: white;
+    font-style: 18px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    color: black;
+    background-color: white;
+    transition: all .4s ease;
+}
+#blablabla {
+    display: none;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+  
+  #blablabla.open {
+    display: block;
+}
+  
+  .popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    display: none;
+  }
+  
+  .popup_open {
+    display: block;
+  }
+  
+  .popup__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    max-width: 588px;
+    width: 100%;
+  }
+  
+.popup__wrapper {
+padding: 40px;
+}
+        
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

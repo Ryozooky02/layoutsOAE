@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../3.Pet-Portfolio-OAE/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <section class="main-hero">
+        <nav>
+            <h1 class="logo">ORDABEK.dev</h1>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-text">
+            <h1>I'm a <br> <span class="input"> Developer</span></h1>
+            <p>Also song digger, art lover, travel addict</p>
+            <button type="button">Hire Me</button>
+            <button type="button" class="CV">CV - Resume</button>
+
+            <div class="popup">
+                <div class="popup__container">
+                  <div class="popup__wrapper">
+                    <div id="blablabla">
+                      <form role="form" action="/requestFine" autocomplete="off" method="POST">
+                        <label>Ім'я:</label>
+                        <input type="text" name="nameReq">
+                        <label>Прізвище:</label>
+                        <input type="text" name="lastNameReq">
+                        <label>Телефон:</label>
+                        <input type="text" name="telReq">
+                        <label>Опис:</label>
+                        <input type="text" name="textReq">
+                        <button type="submit" class="btn btn-success">Отправить</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script> let typed = new Typed (".input", {
+        strings:["Developer", "Designer", "freelancer"],
+        typeSpeed: 120,
+        backSpeed: 110,
+        loop: true
+    })</script>
+
+    <script src="../3.Pet-Portfolio-OAE/javaScript/script.js"></script>
+</body>
+</html>
